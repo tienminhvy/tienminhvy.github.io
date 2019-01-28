@@ -1,0 +1,159 @@
+/* CSS Document */
+/* Global */
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.center {
+    text-align: center;
+}
+h1.center {
+    line-height: 120px;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(199, 71, 71);
+}
+/* Navigation Bar */
+.logo-image {
+    z-index: 999;
+    position: fixed;
+}
+.nav {
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    justify-content: right;
+    position: fixed;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.nav-item > a{
+    line-height: 45px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.nav-item:hover > a, .nav-item:active > a {
+    background-color: rgb(199, 71, 71);
+    color: white;
+}
+.responsive-menu {display: none;}
+/* Main */
+.responsive-menu:hover ~ .nav-item {
+    display: block;
+    height: 180px;
+}
+main {
+    padding-top: 25px;
+}
+.home, .about, .portfolio, .contact{
+    min-height: 600px;
+}
+.desc, .some_portfolio, .social-type {
+    padding-top: 10%;
+    text-align: center;
+}
+/* Heart Animation */
+/* Powered by Animista.net */
+.heart {
+    color: red;
+}
+
+.heart {
+    -webkit-animation: heart 1s cubic-bezier(.39, .575, .565, 1.000) infinite both;
+    animation: heart 1s cubic-bezier(.39, .575, .565, 1.000) infinite both
+}
+
+@-webkit-keyframes heart {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes heart {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+/* Contact */
+
+.contact {
+    font-size: 90px;
+    text-align: center;
+}
+
+.contact a:hover {
+    color: black;
+}
+
+.fb, .twitter, .github, .internet {
+    transition: .5s ease;
+}
+
+.fb:hover {
+    color: blue;
+}
+
+.twitter:hover {
+    color:rgb(0, 191, 255);
+}
+.github:hover {
+    color: gray;
+}
+.internet:hover {
+    color: rgb(88, 180, 180);
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(63, 63, 63);
+    height: 52px;
+    color: white;
+}
+footer > p {
+    text-align: center;
+    padding-top: 12px;
+}
+
+/* Responsive Design */
+
+/* Phone */
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+    .responsive-menu {display: block;}
+    .menu-item{display: none;}
+}
+
+/* Bigger Than Phone - IPad,... */
+@media only screen and (max-width: 768px) {
+    .responsive-menu {display: block;}
+    .menu-item{display: none;}
+}
+
+/* PC, Laptop */
+@media only screen and (max-width: 1200px) {
+     
+}

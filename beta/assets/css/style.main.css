@@ -2,8 +2,9 @@
 /* Made with love by Tien Minh Vy, All Right Reserved */
  
 /* Global */
-* {margin: 0; padding: 0; font-family: Tahoma, Arial, 'sans-serif'}
+* {margin: 0; padding: 0;}
 
+html {font-family: Tahoma, Arial, 'sans-serif'}
 .center {
     display: flex;
     justify-content: center;
@@ -59,7 +60,7 @@ a:hover {
 
 .menu-section .content {
     height: 40px;
-    width: 1150px;
+    width: 85vw;
     margin: 0 auto;
 }
 
@@ -206,10 +207,21 @@ main {
 }
 
 /* Responsive Web Design for Mobiles/Tablets */
-
-/* Smaller Smartphone */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+@media all and (max-device-width: 1260px) {
+    li > .fas.fa-bars{
+        display: block;
+    }
+    .desktopView {
+        display: none;
+    }
+    /* .logo-ads .content img[alt="Logo Image"] {
+        margin: 15px auto;
+    } */
+    .logo-ads .content {
+        justify-content: center;
+    }
+}
+@media all and (min-device-width: 320px) and (max-device-width: 1024px) {
     li > .fas.fa-bars{
         display: block;
     }

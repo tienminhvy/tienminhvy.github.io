@@ -1,8 +1,52 @@
 <!DOCTYPE html>
-<html>
-<h1>404 File not found!</h1>
-<p>Maybe this page has been deleted or moved!</p>
-<hr>
-<p>tienminhvy.github.io</p>
-<a href="/">Go Back</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>404 Error Page</title>
+    <link rel="stylesheet" href="assets/css/style.main.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        .secondsWaiting {
+            cursor: wait;
+        }
+        button {cursor: pointer;}
+        main {
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>404 Error - Page not found!</h1>
+        <h2>404 Không tìm thấy trang!</h2>
+        <hr>
+        <p>Maybe this page has been deleted or moved! Please way back to the homepage! Or wait <span class="secondsWaiting"></span> seconds...</p>
+        <p>Có thể trang này đã bị xóa hoặc chuyển đi nơi khác! Bạn vui lòng quay về trang chủ! Hoặc đợi <span class="secondsWaiting"></span> giây nữa...</p>
+        <a href="/beta"><button><i class="fas fa-home"></i> Homepage / Trang Chủ</button></a>
+    </main>
+    
+
+    <div class="scriptArea">
+        <script src="assets/js/script.main.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var seconds = document.querySelectorAll('.secondsWaiting');
+                var timeLefts = 10;
+                var timeLeftFunc = setInterval(function(){
+                    for (let i = 0; i < seconds.length; i++) {
+                        seconds[i].innerHTML = timeLefts;
+                    }
+                    timeLefts -= 1;
+                    if (timeLefts <= 0) {
+                        window.location.replace("/beta");
+                    }
+                },1000)
+            }, false)
+        </script>
+    </div>
+</body>
 </html>

@@ -22,13 +22,15 @@ logo: https://secure.gravatar.com/avatar/acf27e3bd3138bf8f44174b6d79c06f3?s=1024
 title: Tien Minh Vy
 email: me@tienminhvy.com
 description: >- # this means to ignore newlines until "baseurl:"
-  <div style='text-align: center'>
-    <a href="https://github.com/tienminhvy/tienminhvy/blob/main/resume_vi.pdf">Résume</a> | <a href="https://www.linkedin.com/in/tienminhvy/">Linkedin</a> | <a href="https://github.com/tienminhvy">Github</a>
+  <div style="margin-bottom: 6px">
+    <div style='text-align: center'>
+      <a href="https://github.com/tienminhvy/tienminhvy/blob/main/resume_vi.pdf">Résume</a> | <a href="https://www.linkedin.com/in/tienminhvy/">Linkedin</a> | <a href="https://github.com/tienminhvy">Github</a>
+    </div>
+    <br>
+    <div>I'm pursing B.S. degree in Information Technology at Saigon University, HCMC, Vietnam.</div>
+    <br>
+    <div>I'm currently focusing on Software Engineer Career. This is my portfolio page which is containing all of projects I've done.</div>
   </div>
-  <br>
-  <div>I'm pursing B.S. degree in Information Technology at Saigon University, HCMC, Vietnam.</div>
-  <br>
-  <div>I'm currently focusing on Software Engineer Career. This is my portfolio page which is containing all of projects I've done.</div>
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tienminhvy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # github_username:  tienminhvy

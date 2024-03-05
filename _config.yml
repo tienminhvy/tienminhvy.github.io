@@ -31,7 +31,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   <div>I'm currently focusing on Software Engineer Career. This is my portfolio page which is containing all of projects I've done.</div>
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tienminhvy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  tienminhvy
+# github_username:  tienminhvy
 
 # Build settings
 theme: jekyll-theme-minimal
